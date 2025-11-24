@@ -1,0 +1,337 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  background: #f4f5fb;
+}
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-page {
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #1d3557, #457b9d);
+  color: white;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.main-content {
+  padding: 1.5rem;
+}
+
+.horizontal-menu {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+  flex: 1;
+}
+
+.horizontal-menu a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.horizontal-menu a.active {
+  font-weight: 600;
+  border-bottom: 2px solid #f1fa8c;
+}
+
+.logout-btn {
+  border: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: #f1fa8c;
+  color: #1d3557;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+
+.hamburger-wrapper {
+  position: relative;
+}
+
+.hamburger-btn {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+  background: white;
+  color: #222;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.18);
+  padding: 0.5rem 0;
+  min-width: 180px;
+}
+
+.hamburger-menu button {
+  width: 100%;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-align: left;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-menu button:hover {
+  background: #f3f4f6;
+}
+
+.submenu {
+  padding-left: 1rem;
+}
+
+.employees-page {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.primary-btn {
+  border: none;
+  background: #457b9d;
+  color: white;
+  padding: 0.45rem 1rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.view-toggle {
+  display: flex;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.view-toggle button {
+  padding: 0.3rem 0.9rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.view-toggle button.active {
+  background: #1d3557;
+  color: white;
+}
+
+.employee-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.employee-grid thead {
+  background: #f3f4f6;
+}
+
+.employee-grid th,
+.employee-grid td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.employee-grid tbody tr:hover {
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.tile {
+  background: #f9fafb;
+  border-radius: 0.9rem;
+  padding: 0.9rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.tile-actions button {
+  border: none;
+  background: transparent;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  color: #1d3557;
+}
+
+.tile-body {
+  font-size: 0.85rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.75rem;
+}
+
+.link-btn {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  cursor: pointer;
+  padding: 0;
+  align-self: flex-start;
+  font-size: 0.85rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.pagination button {
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  padding: 0.25rem 0.8rem;
+  background: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 420px;
+  width: 90%;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.7rem;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 320px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.15);
+}
+
+.login-container h2 {
+  margin-top: 0;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.login-container input {
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+}
+
+.login-container button {
+  border: none;
+  background: #1d3557;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.login-container .hint {
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.8rem;
+}
