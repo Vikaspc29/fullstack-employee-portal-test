@@ -1,4 +1,4 @@
-# Full Stack Skill Test Project (Clean Structure)
+# Full Stack Skill Test Project
 
 This project is a small full-stack app built with:
 
